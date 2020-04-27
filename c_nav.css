@@ -1,0 +1,56 @@
+#menu{
+	width:100%;
+	height:0px;
+	z-index: 100;
+}
+#menu #navbar .widget .title{display: none;}
+#navbar{
+	text-align: center;
+	background-color:#000;
+	z-index: 100;
+}
+#menu #navbar .widget{
+	display:inline-table;
+	vertical-align: top;
+}
+#menu #navbar .widget .nav{margin-left:0%;}
+#menu #navbar .widget a, #menu #navbar .widget .nav a{
+	background-color:transparent;
+	padding: 10px 15px;
+	display: block;
+	text-decoration: none;
+	color:#ccc;
+	font-family:Calibri, arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+#menu #navbar .widget .quickedit{background-color:transparent;padding: 0;border: none;}
+#menu #navbar .widget .quickedit:hover{background-color:transparent;}
+#menu #navbar .widget a:hover, #menu #navbar .widget .nav a:hover{background-color:#666;color:#fff;}
+#menu #navbar .widget .nav .drop{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+	z-index: 200;
+}
+#menu #navbar .widget .nav .drop a{
+	background-color:rgba(69,69,69, 0.9);
+	font-family:Calibri, arial;
+	font-size: 17px;
+	font-weight: normal;
+	text-align: left;
+}
+#menu #navbar .widget .nav .drop a:hover{background-color:#666;color:#fff;}
+#menu #navbar .widget .nav:hover > .drop{display: block;}
+#menu #navbar .widget .nav .drop .nav-button{position: relative;}
+#menu #navbar .widget .nav .drop .nav-button:hover > .drop-child{display: block;}
+#menu #navbar .widget .nav .drop .drop-child{
+display: none;
+position: absolute;
+float: right;
+top:0;
+right:-180px;
+min-width:180px;
+max-width:180px;
+}
+#menu #navbar .widget .nav .drop ul, ol, li{list-style:none;}
